@@ -399,11 +399,12 @@
       </div>
 
     </div><!-- End Testimonials  -->
+    
 
   </section><!-- End About Section -->
 
   <!-- ======= Resume Section ======= -->
-  <section id="resume" class="resume">
+  <!-- <section id="resume" class="resume">
     <div class="container">
 
       <div class="section-title">
@@ -495,7 +496,146 @@
       </div>
 
     </div>
-  </section><!-- End Resume Section -->
+  </section> -->
+  <!-- End Resume Section -->
+
+<!-- ============================================================ -->
+
+<section id="resume" class="resume">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Resume</h2>
+      <p>Check My Resume</p>
+    </div>
+    <div class="resume-item">
+      <h4>Download Resume</h4>
+      <p>
+        <button onclick="downloadResume()" class="btn btn-primary">Download PDF</button>
+      </p>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6">
+        <h3 class="resume-title">Summary</h3>
+        <div class="resume-item pb-0">
+          <h4>CAREER OBJECTIVE:</h4>
+          <p><em>Passionate and dynamic frontend developer with a robust skill set in HTML, CSS, and JavaScript,
+            complemented by practical experience in React.js for developing engaging and interactive user
+            interfaces. Proficient in backend development with Node.js, Express.js, and MongoDB, enabling the
+            creation of scalable, efficient web applications. Committed to continuous learning and staying abreast of
+            the latest technological trends, I am eager to apply my comprehensive expertise to contribute to
+            pioneering projects and deliver exceptional solutions tailored to client needs. Poised to embark on a
+            challenging journey, I aim to make a meaningful impact in the ever-evolving web development industry.</em></p>
+        </div>
+
+        <h3 class="resume-title">Education</h3>
+        <div class="resume-item">
+          <h4>Bachelor of Public Health & Informatives</h4>
+          <h5>2023 - 2027</h5>
+          <p><em>Daffodil International University , Bangladesh</em></p>
+          <p>I am a dedicated Public Health student currently in my second year of Honours studies.</p>
+        </div>
+        <div class="resume-item">
+          <h4> Higher Secondary School Certificate.</h5>
+          <h5>2019 - 2021</h5>
+          <p><em>Mirpur Cantonment Public School & College , Dhaka</em></p>
+        </div>
+        <div class="resume-item">
+          <h4> Secondary School Certificate</h5>
+          <h5>2009 - 2019</h5>
+          <p><em>Monipur School & College  , Dhaka</em></p>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <h3 class="resume-title">Course</h3>
+        <div class="resume-item">
+          <h4>Program Name: Complete Web Development</h4>
+          <p><em>Organization: Programming Hero
+          </em></p>
+          <p>
+          <ul>
+            <li><span>Short Description:</span> Completed Programming Hero's web development course, mastering HTML,
+              CSS, JavaScript, React.js, Node.js, Express.js, and MongoDB. Built dynamic web apps with
+              React.js and robust server-side apps with Node.js/Express.js. Enhanced data management skills
+              with MongoDB. Developed strong time management and punctuality habits crucial for
+              professional success. This training has equipped me to tackle industry challenges as a proficient
+              and disciplined web developer.</li>
+          </ul>
+          </p>
+        </div>
+        <div class="resume-item">
+          <h4>Skills</h4>
+          <p>
+          <ul>
+           <li>HTML/CSS</li>
+           <li>TailwindCSS/Bootstrap</li>
+           <li>JavaScript</li>
+           <li>React.js</li>
+           <li>Node.js</li>
+           <li>Express.js</li>
+           <li>MongoDB</li>
+           <li>Framer Motion</li>
+          </ul>
+          </p>
+        </div>
+        <div class="resume-item">
+          <h4>Tools & Others</h4>
+          <p>
+          <ul>
+           <li>Git/Github</li>
+           <li> Firebase</li>
+           <li>Web Design UI/UX Design</li>
+           <li>Principles Figma</li>
+          </ul>
+          </p>
+        </div>
+        <!-- <div class="resume-item">
+          <h4>Download Resume</h4>
+          <p>
+            <button onclick="downloadResume()" class="btn btn-primary">Download PDF</button>
+          </p>
+        </div> -->
+      </div>
+    </div>
+
+  </div>
+</section><!-- End Resume Section -->
+
+<script>
+  function downloadResume() {
+    const link = document.createElement('a');
+    link.href = 'https://drive.google.com/file/d/1BD_RTkMYIyHTvO-zu7CiH1K3vSm0pPEj/view?usp=sharing';  // Update the path to your PDF file here
+    link.download = 'resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   <!-- ======= Services Section ======= -->
   <section id="services" class="services">
@@ -817,8 +957,9 @@
       </form>
 
     </div>
+  
   </section><!-- End Contact Section -->
-
+ 
   <div class="credits">
     <!-- All the links in the footer should remain intact. -->
     <!-- You can delete the links only if you purchased the pro version. -->
@@ -838,6 +979,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+ 
 
 </body>
 
