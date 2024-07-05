@@ -8,7 +8,18 @@
   <title>SRS_portfolio</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
-
+<!-- +++++++++++++++++++++++++++++ -->
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "Evyfpw2tyPcwznspM",
+      });
+   })();
+</script>
+<!-- +++++++++++++++++++++++++++++ -->
   <!-- Favicons -->
   <link href="assets/img/kala.png" rel="icon">
   <link href="assets/img/kala.png" rel="icon">
@@ -883,7 +894,7 @@
   </section><!-- End Portfolio Section -->
 
   <!-- ======= Contact Section ======= -->
-  <section id="contact" class="contact">
+  <!-- <section id="contact" class="contact">
     <div class="container">
 
       <div class="section-title">
@@ -958,8 +969,103 @@
 
     </div>
     
-  </section><!-- End Contact Section -->
+  </section> -->
+  <!-- End Contact Section -->
  
+
+<!-- ==============================Email================================ -->
+<section id="contact" class="contact">
+  <div class="container">
+    <div class="section-title">
+      <h2>Contact</h2>
+      <p>Contact Me</p>
+    </div>
+    <div class="row mt-2">
+      <div class="col-md-6 d-flex align-items-stretch">
+        <div class="info-box">
+          <i class="bx bx-map"></i>
+          <h3>My Address</h3>
+          <p>1093 , Mirpur-2 , Dhaka-1216 , Bangladesh</p>
+        </div>
+      </div>
+      <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
+        <div class="info-box">
+          <i class="bx bx-share-alt"></i>
+          <h3>Social Profiles</h3>
+          <div class="social-links">
+            <a href="https://github.com/samsur4D" target="_blank" class="github"><i class="bi bi-github"></i></a>
+            <a href="" target="_blank" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100075768694469" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/samsur_samu/" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/md-samsur-rahman-samu/" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mt-4 d-flex align-items-stretch">
+        <div class="info-box">
+          <i class="bx bx-envelope"></i>
+          <h3>Email Me</h3>
+          <p><a href="mailto:patarehan14600@gmail.com">patarehan14600@gmail.com</a></p>
+        </div>
+      </div>
+      <div class="col-md-6 mt-4 d-flex align-items-stretch">
+        <div class="info-box">
+          <i class="bx bx-phone-call"></i>
+          <h3>Call Me</h3>
+          <p>+88-01879-453612</p>
+        </div>
+      </div>
+    </div>
+    <form id="contact-form" class="php-email-form mt-4">
+      <div class="row">
+        <div class="col-md-6 form-group">
+          <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+        </div>
+        <div class="col-md-6 form-group mt-3 mt-md-0">
+          <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+        </div>
+      </div>
+      <div class="form-group mt-3">
+        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+      </div>
+      <div class="form-group mt-3">
+        <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+      </div>
+      <div class="my-3">
+        <div class="loading">Loading</div>
+        <div class="error-message"></div>
+        <div class="sent-message">Your message has been sent. Thank you!</div>
+      </div>
+      <div class="text-center"><button type="submit">Send Message</button></div>
+    </form>
+  </div>
+</section>
+
+<!-- JavaScript to handle form submission and send email using EmailJS -->
+<script type="text/javascript">
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const serviceID = 'service_nprbufg'; // Replace with your actual service ID
+    const templateID = 'template_lp3d4dv'; // Replace with your actual template ID
+
+    emailjs.sendForm(serviceID, templateID, this)
+      .then(() => {
+        alert('Your message has been sent. Thank you!');
+      }, (err) => {
+        alert('Failed to send your message. Please try again later.');
+        console.error('Failed to send email:', err);
+      });
+  });
+</script>
+
+<!-- ==============================Email================================ -->
+
+
+
+
+
+
   <div class="credits">
     <!-- All the links in the footer should remain intact. -->
     <!-- You can delete the links only if you purchased the pro version. -->
