@@ -87,6 +87,7 @@
           <!-- <li><a class="nav-link" href="#services">Services</a></li> -->
           <li><a class="nav-link" href="#portfolio">Projects</a></li>
           <li><a class="nav-link" href="#services">Gallery</a></li>
+          <li><a class="nav-link" href="#itsme">It's Me</a></li>
           <li><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -537,7 +538,6 @@
 
   </div>
 </section>
-
 <script>
   function downloadResume() {
     const link = document.createElement('a');
@@ -552,12 +552,12 @@
 <!-- End Resume Section -->
 
 
-  <!-- ======= Services Section ======= -->
+  <!-- ======= GallerySection ======= -->
   <section id="services" class="services">
     <div class="container">
 
       <div class="section-title">
-        <h2>Services</h2>
+        <h2>Gallery</h2>
         <p>My Gallery</p>
       </div>
 
@@ -572,8 +572,8 @@
             
          
             <div class="portfolio-links">
-              <a href="https://b12-assignment.web.app/" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-              <a href="blog-one.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+             
+              <a href="blog-one.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><h5>Details</h5></a>
             </div>
           </div>
         </div>
@@ -587,8 +587,8 @@
             
          
             <div class="portfolio-links">
-              <a href="https://b12-assignment.web.app/" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-              <a href="blog-two.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+              
+              <a href="blog-two.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><h5>Details</h5></a>
             </div>
           </div>
         </div>
@@ -598,13 +598,13 @@
         <div class="portfolio-wrap">
           <img src="assets/img/portfolio/sh1.jpg" class="img-fluid h-36" alt="">
           <div class="portfolio-info">
-             <h3>#সহস্রধারা #প্রকৃতিপ্রেমী #বন্ধুত্ব</h3>
-             <h5>August 21 , 2021</h5>
+             <h3>"First tour to Sylhet, After ssc</h3>
+             <h5>March 12 , 2019</h5>
             
          
             <div class="portfolio-links">
-              <a href="https://b12-assignment.web.app/" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-              <a href="blog-3.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+          
+              <a href="blog-3.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><h5>Details</h5></a>
             </div>
           </div>
         </div>
@@ -628,11 +628,31 @@
   <!-- End Services Section -->
 
 
+<!-- Me section -->
+<section id=itsme Me" class="me">
+  <div class="container">
+    <div class="section-title">
+      <h2>Gallery</h2>
+      <p>Check out my photos</p>
+     
+    </div>
+    <div class="row gallery">
+      <!-- Gallery items will be inserted here -->
+    </div>
+   
+  </div>
+</section>
+<!-- end me section -->
+<div id="imageModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImg">
+  <div id="caption"></div>
+</div>
 
 
+<!-- upload image  -->
 
-
-
+<!--  -->
 
 
 
@@ -953,6 +973,67 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+ 
+
+  <!-- 99999999999999999999999999 -->
+  <script>
+    // Gallery images data
+    const galleryImages = [
+    { src: 'assets/img/portfolio/0101.png', caption: 'Yet He did not deprive me of His Blessings❗❗', details: 'Distinctively strategize front-end infrastructures before user-centric data. Progressively visualize fully researched initiatives whereas B2B schemas. Assertively administrate B2C initiatives rather.' },
+      { src: 'assets/img/portfolio/1.jpg', caption: 'Yet He did not deprive me of His Blessings❗❗', details: 'Distinctively strategize front-end infrastructures before user-centric data. Progressively visualize fully researched initiatives whereas B2B schemas. Assertively administrate B2C initiatives rather.' },
+      { src: 'assets/img/portfolio/2.jpg', caption: 'Yet He did not deprive me of His Blessings❗❗', details: 'Distinctively strategize front-end infrastructures before user-centric data. Progressively visualize fully researched initiatives whereas B2B schemas. Assertively administrate B2C initiatives rather.' },
+      { src: 'assets/img/portfolio/3.jpg', caption: 'Yet He did not deprive me of His Blessings❗❗', details: 'Distinctively strategize front-end infrastructures before user-centric data. Progressively visualize fully researched initiatives whereas B2B schemas. Assertively administrate B2C initiatives rather.' },
+      { src: 'assets/img/portfolio/4.jpg', caption: 'Yet He did not deprive me of His Blessings❗❗', details: 'Distinctively strategize front-end infrastructures before user-centric data. Progressively visualize fully researched initiatives whereas B2B schemas. Assertively administrate B2C initiatives rather.' },
+      { src: 'assets/img/portfolio/12.jpg', caption: 'Yet He did not deprive me of His Blessings❗❗', details: 'Distinctively strategize front-end infrastructures before user-centric data. Progressively visualize fully researched initiatives whereas B2B schemas. Assertively administrate B2C initiatives rather.' },
+      { src: 'assets/img/portfolio/6.jpg', caption: 'Yet He did not deprive me of His Blessings❗❗', details: 'Distinctively strategize front-end infrastructures before user-centric data. Progressively visualize fully researched initiatives whereas B2B schemas. Assertively administrate B2C initiatives rather.' },
+      { src: 'assets/img/portfolio/7.jpg', caption: 'Yet He did not deprive me of His Blessings❗❗', details: 'Distinctively strategize front-end infrastructures before user-centric data. Progressively visualize fully researched initiatives whereas B2B schemas. Assertively administrate B2C initiatives rather.' },
+      { src: 'assets/img/portfolio/8.jpg', caption: 'Yet He did not deprive me of His Blessings❗❗', details: 'Distinctively strategize front-end infrastructures before user-centric data. Progressively visualize fully researched initiatives whereas B2B schemas. Assertively administrate B2C initiatives rather.' },
+      { src: 'assets/img/portfolio/9.jpg', caption: 'Yet He did not deprive me of His Blessings❗❗', details: 'Distinctively strategize front-end infrastructures before user-centric data. Progressively visualize fully researched initiatives whereas B2B schemas. Assertively administrate B2C initiatives rather.' },
+      { src: 'assets/img/portfolio/10.jpg', caption: 'Yet He did not deprive me of His Blessings❗❗', details: 'Distinctively strategize front-end infrastructures before user-centric data. Progressively visualize fully researched initiatives whereas B2B schemas. Assertively administrate B2C initiatives rather.' },
+      { src: 'assets/img/portfolio/11.jpg', caption: 'Yet He did not deprive me of His Blessings❗❗', details: 'Distinctively strategize front-end infrastructures before user-centric data. Progressively visualize fully researched initiatives whereas B2B schemas. Assertively administrate B2C initiatives rather.' },
+      { src: 'assets/img/portfolio/12.jpg', caption: 'Yet He did not deprive me of His Blessings❗❗', details: 'Distinctively strategize front-end infrastructures before user-centric data. Progressively visualize fully researched initiatives whereas B2B schemas. Assertively administrate B2C initiatives rather.' },
+      { src: 'assets/img/portfolio/13.jpg', caption: 'Yet He did not deprive me of His Blessings❗❗', details: 'Distinctively strategize front-end infrastructures before user-centric data. Progressively visualize fully researched initiatives whereas B2B schemas. Assertively administrate B2C initiatives rather.' },
+      { src: 'assets/img/portfolio/14.jpg', caption: 'Yet He did not deprive me of His Blessings❗❗', details: 'Distinctively strategize front-end infrastructures before user-centric data. Progressively visualize fully researched initiatives whereas B2B schemas. Assertively administrate B2C initiatives rather.' },
+    
+    
+     
+     
+      // Add more images here
+    ];
+
+    // Insert gallery images into the DOM
+    const galleryContainer = document.querySelector('.gallery');
+    galleryImages.forEach((img, index) => {
+      const imgElement = document.createElement('div');
+      imgElement.className = 'col-lg-4 col-md-6';
+      imgElement.innerHTML = `
+        <div class="gallery-item">
+          <img src="${img.src}" alt="${img.caption}" class="img-fluid">
+          <div class="gallery-caption">${img.caption}</div>
+        </div>
+      `;
+      galleryContainer.appendChild(imgElement);
+
+      // Add click event to open modal
+      imgElement.querySelector('img').addEventListener('click', () => {
+        document.getElementById('modalImg').src = img.src;
+        document.getElementById('caption').innerHTML = `<h3>${img.caption}</h3><p>${img.details}</p>`;
+        document.getElementById('imageModal').style.display = 'block';
+      });
+    });
+
+    // Close the modal
+    const modal = document.getElementById('imageModal');
+    const span = document.getElementsByClassName('close')[0];
+    span.onclick = function() {
+      modal.style.display = 'none';
+    }
+  </script>
+
+
+
+  <!-- 999999999999999999999999999 -->
  
  
 </body>
